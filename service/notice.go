@@ -1,9 +1,4 @@
 package service
 
-type Notice interface {
-	List()
-
-	Detail()
-
-	findById()
+type NoticeService interface {
 }

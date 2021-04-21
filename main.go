@@ -14,6 +14,11 @@ func main() {
 		})
 	})
 
+	notice := r.Group("api/notice")
+	{
+		notice.GET("/list", NoticeHandler.List)
+	}
+
 	r.Run()
 
 }
